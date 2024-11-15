@@ -50,6 +50,10 @@
             .img3{
                 display: none;
             }
+
+            .img7{
+                display: none;
+            }
         </style>
 </head>
 
@@ -58,12 +62,14 @@
             <img src="./images/1.png" alt="" class="img1">
             <img src="./images/2.png" alt="" class="img2">
             <img src="./images/3.png" alt="" class="img3">
+            <img src="./images/4.png" alt="" class="img7">
         </div>
 
         <div class="main1">
             <img src="./images/1.png" alt="" class="img4">
             <img src="./images/2.png" alt="" class="img5">
             <img src="./images/3.png" alt="" class="img6">
+            <img src="./images/4.png" alt="" class="img8">
         </div>
 
         <script>
@@ -72,18 +78,28 @@
                     $(".img1").show();
                     $(".img2").hide();
                     $(".img3").hide();
+                    $(".img7").hide();
                 })
 
                 $(".img5").click(function(){
-                    $(".img1").hide();
                     $(".img2").show();
+                    $(".img1").hide();
                     $(".img3").hide();
+                    $(".img7").hide();
                 })
 
                 $(".img6").click(function(){
+                    $(".img3").show();
                     $(".img1").hide();
                     $(".img2").hide();
-                    $(".img3").show();
+                    $(".img7").hide();
+                })
+
+                $(".img8").click(function(){
+                    $(".img7").show();
+                    $(".img3").hide();
+                    $(".img1").hide();
+                    $(".img2").hide();
                 })
             })
         </script>
