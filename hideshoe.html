@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            .main{
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                padding-top: 10%;
+                width: 20%;
+            }
+
+            .main img{
+                height: 200px;
+                width: 200px;
+            }
+
+            .main1{
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                gap: 20px;
+                padding-top: 10%;
+                width: 20%;
+            }
+
+            .main1 img{
+                height: 200px;
+                width: 200px;
+                border: 3px solid black;
+            }
+
+            .img2{
+                display: none;
+            }
+
+            .img3{
+                display: none;
+            }
+        </style>
+</head>
+
+<body>
+        <div class="main">
+            <img src="./images/1.png" alt="" class="img1">
+            <img src="./images/2.png" alt="" class="img2">
+            <img src="./images/3.png" alt="" class="img3">
+        </div>
+
+        <div class="main1">
+            <img src="./images/1.png" alt="" class="img4">
+            <img src="./images/2.png" alt="" class="img5">
+            <img src="./images/3.png" alt="" class="img6">
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                $(".img4").click(function(){
+                    $(".img1").show();
+                    $(".img2").hide();
+                    $(".img3").hide();
+                })
+
+                $(".img5").click(function(){
+                    $(".img1").hide();
+                    $(".img2").show();
+                    $(".img3").hide();
+                })
+
+                $(".img6").click(function(){
+                    $(".img1").hide();
+                    $(".img2").hide();
+                    $(".img3").show();
+                })
+            })
+        </script>
+</body>
+
+</html>
+
